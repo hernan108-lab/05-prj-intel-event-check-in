@@ -13,9 +13,9 @@ form.addEventListener("submit", function (event) {
   // Get form values
   const attendeeName = attendeeNameInput.value.trim();
   const team = teamSelect.value;
-  const teamName =  teamSelectectedOptions[0].text; 
+  const teamName =  teamSelect.options[0].text; 
 
-  console.log(name, team, teamName);
+  console.log(attendeeName, team, teamName);
 
   // Increment attendance count
   count++;
