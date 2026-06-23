@@ -23,3 +23,5 @@ form.addEventListener("submit", function (event) {
 
   //Update progress bar
   const percentage = Math.round((count / maxcount) * 100) + "%";
+  console.log(`Progress: ${percentage}`);
+});
