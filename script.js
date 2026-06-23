@@ -24,4 +24,14 @@ form.addEventListener("submit", function (event) {
   //Update progress bar
   const percentage = Math.round((count / maxcount) * 100) + "%";
   console.log(`Progress: ${percentage}`);
+
+  //Update team count
+  const teamCounter = document.getElementById(team + "Count");
+  teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
+
+  //Show welcome message
+  const message = `Welcome! ${attendeeName} from ${teamName}!`;
+  console.log(message);
+
+  form.reset();
 });
